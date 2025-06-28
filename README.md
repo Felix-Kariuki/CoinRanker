@@ -1,6 +1,8 @@
 
 # CoinRanker 
 
+Take Home assessment
+
 An iOS application that fetches data from the [CoinRanking](https://developers.coinranking.com/api/documentation) API and displays a list of the top 100
 cryptocurrency coins paginated, showing 20 characters per page.
 Written using SwiftUI and UIKit.
