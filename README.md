@@ -9,13 +9,18 @@ Written using SwiftUI and UIKit.
 # 📷 Screenshots
 #### Features
 
-| Coin List (Light) | Coin List (Dark) | Filter (Light) | Filter (Dark) | List (Light) |
-|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
-| <img src="./Screenshots/coin_list_light.png" width="180"> | <img src="./Screenshots/coin_list_dark.png" width="180"> | <img src="./Screenshots/filter_light.png" width="180"> | <img src="./Screenshots/filter_dark.png" width="180"> | <img src="./Screenshots/list_light.png" width="180"> |
+| Coin List (Light) | Coin List (Dark) | Filter (Light) |
+|:------------------:|:------------------:|:------------------:|
+| <img src="./Screenshots/coin_list_light.png" width="300"> | <img src="./Screenshots/coin_list_dark.png" width="300"> | <img src="./Screenshots/filter_light.png" width="300"> |
 
-| List (Dark) | Details (Light) | Details (Dark) | Favorites (Light) | Favorites (Dark) |
-|:------------------:|:------------------:|:------------------:|:------------------:|:------------------:|
-| <img src="./Screenshots/list_dark.png" width="180"> | <img src="./Screenshots/details_light.png" width="180"> | <img src="./Screenshots/details_dark.png" width="180"> | <img src="./Screenshots/fav_light.png" width="180"> | <img src="./Screenshots/fav_dark.png" width="180"> |
+| Filter (Dark) | List (Light) | List (Dark) |
+|:------------------:|:------------------:|:------------------:|
+| <img src="./Screenshots/filter_dark.png" width="300"> | <img src="./Screenshots/list_light.png" width="300"> | <img src="./Screenshots/list_dark.png" width="300"> |
+
+| Details (Light) | Details (Dark) | Favorites (Light) | Favorites (Dark) |
+|:------------------:|:------------------:|:------------------:|:------------------:|
+| <img src="./Screenshots/details_light.png" width="200"> | <img src="./Screenshots/details_dark.png" width="200"> | <img src="./Screenshots/fav_light.png" width="240"> | <img src="./Screenshots/fav_dark.png" width="240"> |
+
 
 
 #### Testing
@@ -71,6 +76,7 @@ Clone project and in the `Info.plist`, add the Api key
 <key>COIN_API_KEY</key>
 <string>Api key here</string>
 ```
+You can generate a free API_KEY [Here](https://developers.coinranking.com/api/documentation) if you don't have one
 
 You're are good to go 🥳 Build to run
 
