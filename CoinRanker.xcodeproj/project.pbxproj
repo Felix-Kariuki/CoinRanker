@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DC9F55FC2E0C3319008CD19E /* TimberIOS in Frameworks */ = {isa = PBXBuildFile; productRef = DC9F55FB2E0C3319008CD19E /* TimberIOS */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		DC9F54352E0B194D008CD19E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		DC9F543E2E0B194D008CD19E /* CoinRankerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinRankerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DC9F561D2E0C35E1008CD19E /* Exceptions for "CoinRanker" folder in "CoinRanker" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DC9F54232E0B194B008CD19E /* CoinRanker */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		DC9F54262E0B194B008CD19E /* CoinRanker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DC9F561D2E0C35E1008CD19E /* Exceptions for "CoinRanker" folder in "CoinRanker" target */,
+			);
 			path = CoinRanker;
 			sourceTree = "<group>";
 		};
@@ -45,6 +62,11 @@
 			path = CoinRankerUITests;
 			sourceTree = "<group>";
 		};
+		DC9F59622E100C2D008CD19E /* Screenshots */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC9F55FC2E0C3319008CD19E /* TimberIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +98,7 @@
 		DC9F541B2E0B194B008CD19E = {
 			isa = PBXGroup;
 			children = (
+				DC9F59622E100C2D008CD19E /* Screenshots */,
 				DC9F54262E0B194B008CD19E /* CoinRanker */,
 				DC9F54372E0B194D008CD19E /* CoinRankerTests */,
 				DC9F54412E0B194D008CD19E /* CoinRankerUITests */,
@@ -109,9 +133,11 @@
 			);
 			fileSystemSynchronizedGroups = (
 				DC9F54262E0B194B008CD19E /* CoinRanker */,
+				DC9F59622E100C2D008CD19E /* Screenshots */,
 			);
 			name = CoinRanker;
 			packageProductDependencies = (
+				DC9F55FB2E0C3319008CD19E /* TimberIOS */,
 			);
 			productName = CoinRanker;
 			productReference = DC9F54242E0B194B008CD19E /* CoinRanker.app */;
@@ -195,6 +221,9 @@
 			);
 			mainGroup = DC9F541B2E0B194B008CD19E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DC9F55FA2E0C3319008CD19E /* XCRemoteSwiftPackageReference "TimberIOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = DC9F54252E0B194B008CD19E /* Products */;
 			projectDirPath = "";
@@ -328,6 +357,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +414,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -399,17 +430,20 @@
 				DEVELOPMENT_TEAM = 58TK88D4SZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinRanker/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker.CoinRanker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -428,17 +462,20 @@
 				DEVELOPMENT_TEAM = 58TK88D4SZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinRanker/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker.CoinRanker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -454,7 +491,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58TK88D4SZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker.CoinRankerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -473,7 +510,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58TK88D4SZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker.CoinRankerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -491,6 +528,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58TK88D4SZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker.CoinRankerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +546,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 58TK88D4SZ;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.flexcoded.coinranker.CoinRankerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -558,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC9F55FA2E0C3319008CD19E /* XCRemoteSwiftPackageReference "TimberIOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Felix-Kariuki/TimberIOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC9F55FB2E0C3319008CD19E /* TimberIOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC9F55FA2E0C3319008CD19E /* XCRemoteSwiftPackageReference "TimberIOS" */;
+			productName = TimberIOS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DC9F541C2E0B194B008CD19E /* Project object */;
 }

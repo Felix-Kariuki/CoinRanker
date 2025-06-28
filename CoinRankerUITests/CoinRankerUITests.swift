@@ -40,4 +40,25 @@ final class CoinRankerUITests: XCTestCase {
             }
         }
     }
+    
+    @MainActor
+    func test_views_availability_and_interaction() throws {
+        let app = XCUIApplication()
+        app.launch()
+        
+        let appnameText = app.staticTexts["appTitle"]
+        let favIcon = app.staticTexts["favIcon"]
+        
+        // validate app title text present
+        XCTAssertTrue(appnameText.waitForExistence(timeout: 2))
+        
+        // validate top icons present
+        XCTAssertTrue(favIcon.waitForExistence(timeout: 2))
+        
+        // assert click fav icon navigate to favorites
+        favIcon.tap()
+        let favTitleText = app.staticTexts["favorites"]
+        XCTAssertTrue(favTitleText.waitForExistence(timeout: 2))
+        
+    }
 }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>COIN_API_KEY</key>
+	<string>Api key here</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Urbanist-Black.ttf</string>
+		<string>Urbanist-Bold.ttf</string>
+		<string>Urbanist-ExtraBold.ttf</string>
+		<string>Urbanist-ExtraLight.ttf</string>
+		<string>Urbanist-Light.ttf</string>
+		<string>Urbanist-Medium.ttf</string>
+		<string>Urbanist-Regular.ttf</string>
+		<string>Urbanist-SemiBold.ttf</string>
+		<string>Urbanist-Thin.ttf</string>
+	</array>
+</dict>
+</plist>
