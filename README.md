@@ -25,7 +25,7 @@ Written using SwiftUI and UIKit.
 
 | Favorite Action | Unfavorite Action |
 |:------------------:|:------------------:|
-| <img src="./Screenshots/fav_action.png" width="240"> | <img src="./Screenshots/unfav_action.png" width="240"> |
+| <img src="./Screenshots/fav.png" width="240"> | <img src="./Screenshots/unfav.png" width="240"> |
 
 
 
