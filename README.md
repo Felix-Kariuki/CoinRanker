@@ -109,9 +109,8 @@ The rate limiter might also affect the success of the tests so It's highly advis
 - [SwiftData](https://developer.apple.com/documentation/combine) - SwiftData offers an expressive and lightweight API for modeling and persisting your app's data using pure Swift code
 
 ## Challenges && Solutions
-1. Due to sometimes hitting the rate limit while using the free apikey/ (when not using the apikey) , I added a view more button incase you haddent fetched all the 10 coins
-so once limit is ended you can promt viewMore to view the remaining coins without scrolling up and down to relaunch the pagination
-
+1. Due to sometimes hitting the rate limit while using the free apikey/ (when not using the apikey) , I added a view more button incase you had not fetched all the 10 coins
+so once limit is ended you can prompt viewMore to view the remaining coins without scrolling up and down to relaunch the pagination
 
 
 ## 👨🏾‍💻 Author
