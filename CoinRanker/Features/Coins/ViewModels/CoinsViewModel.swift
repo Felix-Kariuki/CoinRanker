@@ -21,8 +21,8 @@ class CoinsViewModel: ObservableObject{
     @Published var filters: [String] = []
     @Published var filtersStrings: [String] = []
     var sortOptions: [FilterModel] = [
-        FilterModel(name:"Price", filter:"price"),
-        FilterModel(name:"24h Perfomance", filter:"24hVolume")
+        FilterModel(name:"Highest Price", filter:"price"),
+        FilterModel(name:"24h Performance", filter:"24hVolume")
     ]
     
      var offset: Int32 = 0
