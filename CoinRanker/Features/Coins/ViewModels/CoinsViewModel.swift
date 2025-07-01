@@ -54,7 +54,6 @@ class CoinsViewModel: ObservableObject{
     
     func fetchCoins() {
         guard !isLoading, offset < maxLimit else { return }
-        Timber.i("FETCH COINS ..... \(isLoading) \(offset)  \(maxLimit)")
         isLoading = true
 
         repository.getCoins(limit: limit, offset: offset, orderBy: filters)
