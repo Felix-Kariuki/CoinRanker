@@ -76,13 +76,13 @@ Written using SwiftUI and UIKit.
 
 ### Implementation Notes
 
-- **UIKit**: Used for the main coin list, including the table header view
+- **UIKit**: Used in the main coin list, on the table header view
 - **SwiftUI**: Used for individual coin items and the coin details view (including the chart)
 
 
 ## 🚀 Getting Started
 
-Clone project and in the `Info.plist`, add the Api key
+Clone the project and in the `Info.plist`, add the Api key
 
 ```
 <key>COIN_API_KEY</key>
