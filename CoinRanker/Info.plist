@@ -16,5 +16,8 @@
 		<string>Urbanist-SemiBold.ttf</string>
 		<string>Urbanist-Thin.ttf</string>
 	</array>
+    
+    <key>UILaunchStoryboardName</key>
+    <string>Launch Screen</string>
 </dict>
 </plist>

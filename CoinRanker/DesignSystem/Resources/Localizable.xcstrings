@@ -37,6 +37,9 @@
         }
       }
     },
+    "CoinPulse" : {
+
+    },
     "favorite" : {
       "extractionState" : "manual",
       "localizations" : {
